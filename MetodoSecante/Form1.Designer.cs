@@ -45,9 +45,9 @@
             lblErrorFinalTitulo = new Label();
             lblRaizTitulo = new Label();
             lbIteración = new Label();
-            dataIteración = new DataGridView();
+            dataIteracion = new DataGridView();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataIteración).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataIteracion).BeginInit();
             SuspendLayout();
             // 
             // lblFuncion
@@ -76,9 +76,9 @@
             lbXI.Font = new Font("Microsoft YaHei", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lbXI.Location = new Point(48, 159);
             lbXI.Name = "lbXI";
-            lbXI.Size = new Size(38, 27);
+            lbXI.Size = new Size(44, 27);
             lbXI.TabIndex = 2;
-            lbXI.Text = "Xi:";
+            lbXI.Text = "X1:";
             // 
             // lbError
             // 
@@ -220,15 +220,15 @@
             lbIteración.TabIndex = 0;
             lbIteración.Text = "Iteración:";
             // 
-            // dataIteración
+            // dataIteracion
             // 
-            dataIteración.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataIteración.Location = new Point(48, 427);
-            dataIteración.Margin = new Padding(3, 4, 3, 4);
-            dataIteración.Name = "dataIteración";
-            dataIteración.RowHeadersWidth = 51;
-            dataIteración.Size = new Size(900, 267);
-            dataIteración.TabIndex = 11;
+            dataIteracion.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataIteracion.Location = new Point(48, 427);
+            dataIteracion.Margin = new Padding(3, 4, 3, 4);
+            dataIteracion.Name = "dataIteracion";
+            dataIteracion.RowHeadersWidth = 51;
+            dataIteracion.Size = new Size(900, 267);
+            dataIteracion.TabIndex = 11;
             // 
             // FormPrincipal
             // 
@@ -236,7 +236,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(1055, 733);
-            Controls.Add(dataIteración);
+            Controls.Add(dataIteracion);
             Controls.Add(panel1);
             Controls.Add(btnLimpiar);
             Controls.Add(btnCalcular);
@@ -251,9 +251,10 @@
             Margin = new Padding(3, 4, 3, 4);
             Name = "FormPrincipal";
             Text = "Método de la Secante";
+            Load += FormPrincipal_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataIteración).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataIteracion).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -277,6 +278,6 @@
         private Label lblErrorFinalTitulo;
         private Label lblRaizTitulo;
         private Label lbIteración;
-        private DataGridView dataIteración;
+        private DataGridView dataIteracion;
     }
 }
