@@ -89,7 +89,7 @@ namespace MetodoSecante
             if (Math.Abs(fx1 - fx0) < 1e-6)
                 throw new Exception("División por cero: f(x1) ≈ f(x0).");
 
-            return x1 - (fx1 * (x1 - x0)) / (fx1 - fx0);
+            return x1 - fx1 * ((x1 - x0) / (fx1 - fx0));
         }
 
         public int retIteraciones() => _iteraciones;
